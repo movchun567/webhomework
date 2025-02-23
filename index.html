@@ -4,6 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>JEZ SALAD</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -13,20 +20,22 @@
             <a class="header-link" href="#">Menu</a>
             <a class="header-link" href="#">Contact</a>
             <a class="header-link" href="#">About Us</a>
-            <button class="sign-btn">Sign</button>
             </nav>
+            <button class="sign-btn">Sign</button>
         </header>
         <main class="main">
             <section class="banner">
-                <p class="banner-subheader">#1 <strong>Best Healthy Salad</strong></p>
-                <h1 class="banner-header">Skip The Diet, <br>
-                    Just Eat Healthy <br>
-                    With Jez Salad</h1>
-                <p class="banner-text">
-                    Imagine you don't need a diet because we provide <br>
-                    healthy and delicious food for you!
-                </p>
-                <button class="banner-btn">Order Food</button>
+                <div class="banner-content">
+                    <p class="banner-subheader">#1 <strong>Best Healthy Salad</strong></p>
+                    <h1 class="banner-header"><span class="highlight">Skip</span> The Diet, <br>
+                        Just Eat Healthy <br>
+                        With Jez Salad</h1>
+                    <p class="banner-text">
+                        Imagine you don't need a diet because we provide <br>
+                        healthy and delicious food for you!
+                    </p>
+                    <button class="banner-btn">Order Food</button>
+                </div>
                 <div class="features-container">
                     <article class="feature">
                         <h3 class="feature-info"><strong>5.000+</strong></h3>
@@ -42,7 +51,7 @@
                     </article>
                 </div>
                 <img class="banner-image" src="./images/icons/heart_icon.svg">
-                <img class="banner-image" src="./images/woman.svg">
+                <img class="banner-image-woman" src="./images/woman.svg">
                 <img class="banner-icon" src="./images/icons/smileyface.svg">
                 <h4 class="banner-text">Our Happy Customer</h4>
                 <img class="banner-icon" src="./images/icons/star.svg">
@@ -78,10 +87,12 @@
                 </progress>
             </section>
             <section class="services">
-                <h2 class="services-header"><strong>WHY CHOOSE US FOR YOUR HEALTHY FOOD</strong></h2>
-                <p class="services-text">We continue to consistently choose and <br>
-                    maintain the quality of the fruit served, so that <br>
-                    it remains fresh and nutritious when you eat it.</p>
+                <div class="services-text-container">
+                    <h2 class="services-header"><strong>WHY CHOOSE US FOR <span class="highlight">YOUR HEALTHY FOOD</span></strong></h2>
+                    <p class="services-text">We continue to consistently choose and <br>
+                        maintain the quality of the fruit served, so that <br>
+                        it remains fresh and nutritious when you eat it.</p>
+                </div>
                 <div class="service-container">
                 <article class="service">
                     <img class="service-icon" src="./images/icons/factory_icon.svg">
@@ -110,15 +121,20 @@
                 </div>
             </section>
             <section class="feedback">
-                <h1 class="feedback-subheader">What Are People <br>
-                    Saying About Us</h1>
-                <p class="feedback-text">We are very happy if you are satisfied with our <br>
-                    service and products, let's read pure reviews from <br>
-                    customers who bought our products.</p>
-                <h1 class="feedback-current-page">02</h1>
-                <p class="feedback-pages">/ 05</p>
-                <img class="arrow-previous" src="./images/icons/prev_btn.svg" alt="Previous page">
-                <img class="arrow-next" src="./images/icons/next_btn.svg" alt="Next page">
+                <div class="feedback-left">
+                    <h1 class="feedback-subheader">What Are People <br>
+                        Saying <span class="highlight">About Us</span></h1>
+                    <p class="feedback-text">We are very happy if you are satisfied with our <br>
+                        service and products, let's read pure reviews from <br>
+                        customers who bought our products.</p>
+
+                    <div class="feedback-paging">
+                        <span class="feedback-current-page">02</span>
+                        <span class="feedback-pages">/ 05</span>
+                        <img class="arrow-button" src="./images/icons/prev_btn.svg" alt="Previous page">
+                        <img class="arrow-button" src="./images/icons/next_btn.svg" alt="Next page">
+                    </div>
+                </div>
                 <div class="reviews-container">
                     <article class="review">
                         <img class="review-user-icon" src="./images/user1.svg">
@@ -161,7 +177,7 @@
             <section class="menu">
                 <h4 class="menu-subheader">MENU YANG MEMBUATMU JATUH CINTA</h4>
                 <h1 class="menu-text">ENJOY THE BEST MENU AND GET <br>
-                    DISCOUNTS AVAILABLE</h1>
+                    <span class="highlight">DISCOUNTS</span> AVAILABLE</h1>
                 <div class="menu-container">
                     <article class="menu-item">
                         <img class="food-photo" src="./images/salad1.svg">
@@ -192,11 +208,13 @@
             </section>
         </main>
         <footer class="footer">
-            <img class="logo" src="./images/icons/logo.svg" alt="JEZ SALAD">
-            <p class="footer-description">Jez Salad is the pioneer of <br>
-                healthy fruit salad with <br>
-                high nutrition.</p>
-            <p class="footer-copyright">©Copyright Jez Salad</p>
+            <div class="footer-branding">
+                <img class="logo-footer" src="./images/icons/logo.svg" alt="JEZ SALAD">
+                <p class="footer-description">Jez Salad is the pioneer of <br>
+                    healthy fruit salad with <br>
+                    high nutrition.</p>
+                <p class="footer-copyright">©Copyright Jez Salad</p>
+            </div>
             <section class="footer-features">
                 <nav class="footer-links">
                     <a class="footer-link" href="#">Home</a>
@@ -206,13 +224,19 @@
                 </nav>
             </section>
             <section class="footer-contacts">
+                <div class="footer-contact-item">
                 <img class="footer-icon" src="./images/icons/location_icon.svg" alt="Location">
                 <p class="footer-contact">8819 Ohio St. South Gate,<br>
                     CA 90280</p>
+                </div>
+                <div class="footer-contact-item">
                 <img class="footer-icon" src="./images/icons/email.svg" alt="Email">
                 <p class="footer-contact">Ourstudio@hello.com</p>
+                </div>
+                <div class="footer-contact-item">
                 <img class="footer-icon" src="./images/icons/call.svg" alt="Telephone">
                 <p class="footer-contact">+1 386-688-3295</p>
+                </div>
             </section>
             <section class="footer-social">
                 <a class="footer-icon-link" href="#"> <img class="footer-icon" src="./images/icons/twitter.svg" alt="Twitter"> </a>
